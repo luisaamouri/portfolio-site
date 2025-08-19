@@ -8,9 +8,9 @@ const Experience = () => {
                 {experience && experience.map((experience) => (
                     <div className="project-card" key={experience.id}>
                         <div className="project-header">
-                            <i className="fa-solid fa-briefcase"></i>
+                            <i className="fa-regular fa-folder-open folder-icon"></i>
                             <div className="small-icons">
-                                <a href={experience.gitHubLink}><i className="fa-brands fa-github"></i></a>
+                                <a href={experience.gitHubLink}><i className="fa-solid fa-briefcase"></i></a>
                             </div>
                         </div>
                         <h3>{experience.title}</h3>

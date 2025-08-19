@@ -13,7 +13,7 @@ export const experience = [
         role: 'Software Developer',
         description:            
             'Designed and developed a new company website from requirement gathering to launch, ensuring the site aligned with brand identity and business objectives. Implemented cybersecurity best practice policies both internally and for 10+ external clients.',
-        gitHubLink: "https://www.humankindhrsolutions.com/"
+        gitHubLink: "https://web.archive.org/web/20250712195123/https://www.hrocore.com/"
     },
     {
         id: 3,
