@@ -5,7 +5,7 @@ const About = () => {
         <div className="about-container">
             <div className="flex-about">
                 <div className="about-img">
-                    <Image src='/images/profile.png' className="profile-img" width={350} height={500} alt="Luisa on a volcano, pretty cool photo"/>
+                    <Image src='/images/profile2.jpg' className="profile-img" width={350} height={500} alt="Luisa"/>
                 </div>
                 <div className="about-text">
                     <h2>About Me</h2>
