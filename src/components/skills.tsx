@@ -3,7 +3,7 @@ const Skills = () => {
       <div className="skills-container">
         <h2>Skills</h2>
         <div className="grid-skills">
-          <div className="skill-card html">
+          <div className="skill-card java">
             <i className="fa-brands fa-java"></i>
             <p>Java</p>
           </div>
@@ -27,11 +27,11 @@ const Skills = () => {
             <i className="fa-brands fa-python python-icon"></i>
             <p>Python</p>
           </div>
-          <div className="skill-card python">
+          <div className="skill-card azure">
             <i className="fa-brands fa-microsoft"></i>
             <p>Azure</p>
           </div>
-          <div className="skill-card python">
+          <div className="skill-card linux">
             <i className="fa-brands fa-linux"></i>
             <p>Linux</p>
           </div>

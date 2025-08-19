@@ -4,6 +4,7 @@ import Skills from '@/components/skills';
 import Projects from '@/components/projects';
 import Contact from '@/components/contact';
 import Head from 'next/head';
+import Experience from '@/components/experience';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Hero />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Contact />
       </div>
