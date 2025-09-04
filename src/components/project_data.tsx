@@ -28,7 +28,7 @@ export const projectData = [
     {
         id: 5,
         title: "Custom Terminal Shell",
-        description: "For another project, a custom shell was built in C featuring a fully functional command execution system. The project focused on deepening understanding of low-level programming and computer architecture, implementing multi-threaded process handling to manage concurrent operations alongside system calls and memory management.",
+        description: "A custom shell built in C featuring a fully functional command execution system. The project focused on deepening understanding of low-level programming and computer architecture, implementing multi-threaded process handling to manage concurrent operations alongside system calls and memory management.",
         image: "/images/CustomShell.png" 
     }
 ];
