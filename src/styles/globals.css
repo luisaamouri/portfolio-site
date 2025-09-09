@@ -230,6 +230,7 @@ hr {
 .about-container .flex-about .about-img {
   width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;  
   align-items: center; 
 }
@@ -238,6 +239,7 @@ hr {
   overflow: hidden;
   max-width: 75%;
   max-height: 50%;
+  margin-bottom: 1rem;
   object-fit: cover;
   border: 2px solid #DADADB;
   filter: grayscale(0%);

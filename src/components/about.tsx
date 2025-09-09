@@ -5,10 +5,10 @@ const About = () => {
         <div className="about-container">
             <div className="flex-about">
                 <div className="about-img">
+                    <h2>About Me</h2>
                     <Image src='/images/profile2.jpg' className="profile-img" width={350} height={500} alt="Luisa"/>
                 </div>
                 <div className="about-text">
-                    <h2>About Me</h2>
                     <p>
                     I am currently a third-year student at Dalhousie University, pursuing a Bachelors of Computer Science with honours and a minor in Neuroscience. Although my tech journey began in 2022, I've been able to achieve more than I could have imagined. In 2023, I worked as a representative of Dalhousie's faculty of Computer Science. Presenting at tech events and schools accross Nova Scotia, I built presentations and activities which made Computer Science accessible to youth with little technical exposure. In January 2024, I began my first internship as a Software Developer, leading a website redesign project for a Halifax based human resource company, and in September 2024 I began my second internship as a full-stack Software Engineer at a FinTech company.
                     </p>
