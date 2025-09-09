@@ -5,6 +5,7 @@ import Projects from '@/components/projects';
 import Contact from '@/components/contact';
 import Head from 'next/head';
 import Experience from '@/components/experience';
+import Gallery from '@/components/photo_gallery';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <Experience />
         <Projects />
         <Contact />
+        <Gallery />
       </div>
     </>
   );
