@@ -58,6 +58,9 @@ const Gallery = () => {
         <>
             <div className="gallery-container">
                 <h2>Photo Gallery</h2>
+                <p>
+                    Amature photography by yours truly.
+                </p>
                 
                 {/* Desktop Grid View */}
                 {!isMobile && (

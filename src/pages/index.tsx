@@ -17,13 +17,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Gallery />
-        <Contact />
+        <section id="hero"><Hero /></section>
+        <section id="about"><About /></section>
+        <section id="skills"><Skills /></section>
+        <section id="experience"><Experience /></section>
+        <section id="projects"><Projects /></section>
+        <section id="gallery"><Gallery /></section>
+        <section id="contact"><Contact /></section>
       </div>
     </>
   );

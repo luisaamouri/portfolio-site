@@ -516,6 +516,10 @@ hr {
   margin-bottom: 2rem;
   text-align: center;
 }
+.gallery-container p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
 /* Desktop Grid */
 .gallery-grid {
@@ -829,4 +833,237 @@ hr {
 .close-btn:focus {
   outline: 2px solid #cba6f7;
   outline-offset: 2px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: #181825;
+  position: relative;
+}
+
+.nav-container .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1001;
+}
+
+/* Desktop Navigation */
+.desktop-nav .nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: right;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: #cdd6f4;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #a6e3a1;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a6e3a1;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Nav Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1001;
+}
+
+.resume-btn {
+  background-color: #a6e3a1;
+  color: #181825;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.resume-btn:hover {
+  background-color: #f5e0dc;
+  transform: translateY(-1px);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+  position: relative;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #cdd6f4;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Navigation Menu */
+.mobile-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #181825;
+  border-top: 1px solid #313244;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.mobile-nav-item {
+  list-style: none;
+}
+
+.mobile-nav-link {
+  background: none;
+  border: none;
+  color: #cdd6f4;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.mobile-nav-link:hover {
+  background-color: #1e1e2e;
+  color: #a6e3a1;
+  border-left-color: #a6e3a1;
+}
+
+.mobile-nav-link:active {
+  background-color: #313244;
+}
+
+/* Mobile Overlay */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 30, 46, 0.8);
+  z-index: 999;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+  .nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  .nav-overlay {
+    display: none;
+  }
+}
+
+/* Focus states */
+.nav-link:focus,
+.mobile-nav-link:focus,
+.menu-toggle:focus,
+
+html {
+  scroll-behavior: smooth;
 }
