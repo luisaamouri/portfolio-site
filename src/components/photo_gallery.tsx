@@ -58,7 +58,7 @@ const Gallery = () => {
         <>
             <div className="gallery-container">
                 <h2>Photo Gallery</h2>
-                <p>
+                <p className='subheader'>
                     Amature photography by yours truly.
                 </p>
                 
